@@ -15,15 +15,15 @@ function DisplayHome(){
          {/* <DisplayAlbum/> */}
          
          <div className="mb-6">
-            <h1 className="my-4 mt-5 font-bold text-2xl" id="albums">Featured charts</h1>
+            <h1 className="my-6 mt-10 font-bold text-2xl" id="albums">Featured charts</h1>
             <div className="flex overflow-auto">
             {Albums.map((AlbumsItem,index)=>{
              return(<AlbumItem key={index} title={AlbumsItem.title} id={AlbumsItem.id} image={AlbumsItem.image} desc={AlbumsItem.description} year={AlbumsItem.year}/>)
             })}
             </div>
          </div>
-         <div className="mt-4">
-            <h1 className="my-12 font-bold text-2xl" id="navitems">Today's biggest Hits</h1>
+         <div className="mt-0">
+            <h1 className="mt-2 font-bold text-2xl" id="navitems">Today's biggest Hits</h1>
             {/* <div className="flex overflow-auto">
              {Telugu.map((telugusongs,index)=>{
                return (<SongItem key={index} name={telugusongs.title} desc={telugusongs.description} id={telugusongs.id} image={telugusongs.image}/>)
