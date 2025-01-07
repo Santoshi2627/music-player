@@ -3,6 +3,10 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import DisplayHome from "./displayhome";
 import { Albums } from "../songsdata/albums";
 import Movies from "./moviesdisplay";
+import SongDetails from "./songsdisplay";
+// import All from './pages/All';
+// import Music from './pages/Music';
+// import Podcast from './pages/Podcast';
 
 const Display = () => {
   const displayRef = useRef();
@@ -30,11 +34,15 @@ const Display = () => {
   return (
     <div
       ref={displayRef}
-      className="w-full m-2 px-6 pt-4 rounded bg-[#121212] text-white overflow-auto lg:w-[75%] lg:ml-0"
+      className="w-100 m-2 px-6 pt-4 rounded bg-[#121212] text-white overflow-auto lg:w-[75%] lg:ml-0"
     >
       <Routes>
         <Route path="/" element={<DisplayHome />} />
         <Route path="/albums/:id" element={<Movies />} />
+        <Route path="/song-details" element={<SongDetails />} />
+        {/* <Route path="/all" element={<All />} />
+        <Route path="/music" element={<Music />} />
+        <Route path="/podcast" element={<Podcast />} /> */}
       </Routes>
     </div>
   );

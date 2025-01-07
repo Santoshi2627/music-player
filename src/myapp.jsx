@@ -3,11 +3,13 @@ import Sidebar from './components/sidebar';
 import Player from './components/player';
 import Display from './components/display';
 import { PlayerContext } from './context/playercontext';
+import "./myapp.css"
+
 const App=()=>{
   const {audioRef,track}=useContext(PlayerContext)
   // we link this audioref in audio tag
     return(
-        <div className='h-screen bg-black'>
+        <div className='h-screen bg-black mainDiv' >
         <div className='h-[90%] flex'>
           <Sidebar/>
           <Display/>

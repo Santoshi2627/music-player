@@ -4,19 +4,24 @@ import ayudhapooja from "./audios/Ayudhapooja.mp3";
 import fear from "./audios/Fear.mp3";
 import thandavam from "./audios/Devara-Thandavam.mp3";
 import Daavudi from "./audios/Daavudi.mp3";
-import godarigattu from "./audios/Godarigattu.mp3"
-import meenu from "./audios/Meenu.mp3"
-import pushpa from "./audios/Pushpapushpa.mp3"
-import kissik from "./audios/Kissik.mp3"
+import godarigattu from "./audios/Godarigattu.mp3";
+import meenu from "./audios/Meenu.mp3";
+import pushpa from "./audios/Pushpapushpa.mp3";
+import kissik from "./audios/Kissik.mp3";
 import sooseki from "./audios/Sooseki.mp3";
 import peelings from "./audios/Peelings.mp3";
-import shekhawat from './audios/Dammuntepattukora.mp3'
-import anuvanuvu from './audios/Anuvanuvu.mp3'
-import srimathigaru from "./audios/srimathigaru.mp3"
-import nijamakala from "./audios/Nijamaakalaa.mp3"
-import fire from "./audios/firesong.mp3"
-import mannimpu from './audios/Mannimpu.mp3'
-import minnale from "./audios/Heyminnale.mp3"
+import shekhawat from "./audios/Dammuntepattukora.mp3";
+import anuvanuvu from "./audios/Anuvanuvu.mp3";
+import srimathigaru from "./audios/srimathigaru.mp3";
+import nijamakala from "./audios/Nijamaakalaa.mp3";
+import fire from "./audios/firesong.mp3";
+import mannimpu from "./audios/Mannimpu.mp3";
+// import minnale from "./audios/Heyminnale.mp3"
+import taubatauba from "./audios/Taubatauba.mp3";
+import akhiyangulab from "./audios/Akhiyaangulaab.mp3";
+import aajkirat from "./audios/aajkirat.mp3";
+import teribaaton from "./audios/Teribaatontitlesong.mp3";
+import vekamalaya from "./audios/vekamalaya.mp3";
 export const Telugu = [
   {
     id: 0,
@@ -38,7 +43,7 @@ export const Telugu = [
     language: "Telugu",
     year: 2024,
     audio: meenu,
-    image:"https://i.scdn.co/image/ab67616d00001e0287d1153ce3b5c92dfe748d5f",
+    image: "https://i.scdn.co/image/ab67616d00001e0287d1153ce3b5c92dfe748d5f",
     description: "A soothing track with deep emotions.",
     duration: "4:00",
   },
@@ -106,7 +111,8 @@ export const Telugu = [
   {
     id: 7,
     title: "Pushpa Raj Anthem",
-    artist: "Vijay PrakashNakash Aziz, Deepak Blue, Mika Singh, Vijay Prakash, Ranjith Govind, and Timir Biswas",
+    artist:
+      "Vijay PrakashNakash Aziz",
     movie: "Pushpa 2: The Rule",
     language: "Telugu",
     year: 2024,
@@ -172,7 +178,8 @@ export const Telugu = [
     language: "Telugu",
     year: 2024,
     audio: anuvanuvu,
-    image: "https://c.saavncdn.com/000/Om-Bheem-Bush-Telugu-2024-20240401231417-500x500.jpg",
+    image:
+      "https://c.saavncdn.com/000/Om-Bheem-Bush-Telugu-2024-20240401231417-500x500.jpg",
     description: "A heartfelt song with deep emotions and soothing music.",
     duration: "4:05",
   },
@@ -200,7 +207,7 @@ export const Telugu = [
     description: "A heartfelt track about truth and emotions",
     duration: "3:40",
   },
-  
+
   {
     id: 15,
     title: "Fire",
@@ -211,7 +218,7 @@ export const Telugu = [
     audio: fire,
     image: "https://i.scdn.co/image/ab67616d0000b273881d3f0bafa13d854ec3b051",
     description: "An energetic and powerful anthem that ignites passion",
-    duration: "3:45"
+    duration: "3:45",
   },
   {
     id: 16,
@@ -223,19 +230,65 @@ export const Telugu = [
     audio: mannimpu,
     image: "https://i.scdn.co/image/ab67616d0000b2732005f3053bf6df284f413252",
     description: "A hauntingly beautiful track with deep emotions.",
-    duration: "5:10"
+    duration: "5:10",
   },
   {
     id: 17,
-    title: "Minnale",
-    artist: "Haricharan",
-    movie: "Amaran",
-    language: "Tamil",
+    title: "Ve Kamleya",
+    movie: "Rocky Aur Rani Kii Prem Kahaani",
+    description:
+      "A romantic duet by Arijit Singh and Shreya Ghoshal, full of longing and affection.",
+    artists: "Arijit Singh Shreya Ghoshal",
+    language: "Hindi",
+    image: "https://i.scdn.co/image/ab67616d0000b27339890c916878b32aebd1d0ee",
+    audio: vekamalaya,
+  },
+  {
+    id: 18,
+    title: "Tauba Tauba",
+    artist: "Badshah",
+    movie: "Bad Newz",
+    language: "Hindi",
+    year: 2025,
+    audio: taubatauba,
+    image: "https://i.scdn.co/image/ab67616d0000b2735960a3f9af07c54eda5c6b3b",
+    description:
+      "A peppy and energetic track with groovy beats, adding a light-hearted vibe to the eerie backdrop of the movie.",
+  },
+  {
+    id: 19,
+    title: "Teri Baaton Mein Aisa Uljha Jiya",
+    artist: "Arijit Singh, Shreya Ghoshal",
+    movie: "Baatein",
+    // language: "Hindi",
     year: 2024,
-    audio: minnale,
-    image: "https://i.scdn.co/image/ab67616d0000b273eea0c06f10fd411eaa6f9230",
-    description: "A soothing melody that touches the heart.",
-    duration: "4:30"
-  }
-  
+    audio: teribaaton,
+    image:
+      "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202401/shahid-kapoor-kriti-sanon-are-too-hot-to-handle-in-new-poster-from-teri-baaton-mein-aisa-uljha-jiya-1757042-1x1.jpg?VersionId=JJIdyGPk3URAIl_3N1JW.PV6a4fdnROL",
+    description: "A soulful romantic melody with heartfelt lyrics.",
+  },
+  {
+    id:20,
+    title: "Akhiyan Gulab",
+    artist: "Neha Kakkar",
+    movie: "Teri Baaton Mein Aisa Uljha Jiya",
+    language: "Hindi",
+    year: 2018,
+    audio: akhiyangulab,
+    image: "https://i.scdn.co/image/ab67616d0000b27352e3a807b72281cb40c08092",
+    description:
+      "A melodious track with heartfelt lyrics and a soothing rhythm.",
+  },
+  {
+    id:21,
+    title: "Aajkirat",
+    artist: "Arijit Singh",
+    movie: "Stree 2",
+    language: "Hindi",
+    year: 2024,
+    audio: aajkirat,
+    image: "https://i.scdn.co/image/ab67616d0000b2735e16168f7e8ff4fb8aace6cf",
+    description:
+      "A haunting melody that blends soulful lyrics with a touch of mystery, capturing the essence of the movie's eerie theme.",
+  },
 ];
