@@ -19,8 +19,8 @@ export const Navbar=()=>{
             </div>
         </div>
         <div className="flex items-center gap-3 mt-4 sticky top-4">
-            <p className="bg-orange-400 text-white px-4 py-1 rounded-xl cursor-pointer" id="nav1"><a href="#albums">All</a></p>
-            <p className="bg-orange-400 text-white px-4 py-1 rounded-xl cursor-pointer" id="nav2"><a href="#navitems">Music</a></p>
+            <p className="bg-orange-400 text-white px-4 py-1 rounded-2xl cursor-pointer" id="nav1"><a href="#albums">All</a></p>
+            <p className="bg-orange-400 text-white px-4 py-1 rounded-2xl cursor-pointer" id="nav2"><a href="#navitems">Music</a></p>
             {/* <p className="bg-orange-400 text-white px-4 py-1 rounded-2xl cursor-pointer">Podcast</p> */}
 
         </div>
