@@ -4,6 +4,7 @@ import DisplayHome from "./displayhome";
 import { Albums } from "../songsdata/albums";
 import Movies from "./moviesdisplay";
 import SongDetails from "./songsdisplay";
+import CreatePlaylistPage from "./addtoplaylist";
 // import All from './pages/All';
 // import Music from './pages/Music';
 // import Podcast from './pages/Podcast';
@@ -27,19 +28,20 @@ const Display = () => {
       displayRef.current.style.background = `linear-gradient(${bColor}, #121212)`;
     } else {
       // Set default background
-      displayRef.current.style.background = "#121212";
+      displayRef.current.style.background = "white";
     }
   }, [isAlbum, bColor]);
 
   return (
     <div
       ref={displayRef}
-      className="w-100 m-2 px-6 pt-4 rounded bg-[#121212] text-white overflow-auto lg:w-[75%] lg:ml-0"
+      className="w-full m-2 px-6 pt-4 rounded bg-orange-500 text-black overflow-auto lg:w-[85%] lg:ml-0"
     >
       <Routes>
         <Route path="/" element={<DisplayHome />} />
         <Route path="/albums/:id" element={<Movies />} />
         <Route path="/song-details" element={<SongDetails />} />
+        <Route path="/create-playlist" element={<CreatePlaylistPage />} />
         {/* <Route path="/all" element={<All />} />
         <Route path="/music" element={<Music />} />
         <Route path="/podcast" element={<Podcast />} /> */}

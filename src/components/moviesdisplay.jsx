@@ -104,7 +104,7 @@ const Movies = () => {
       <h1 className="my-5 font-bold text-2xl">{AlbumData.title}</h1>
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
         {moviesList.map((movie) => (
-          <div key={movie.id} className="p-4">
+          <div key={movie.id} className="p-4 hover:scale-110 transition duration-1000">
             <img
               src={movie.image}
               alt={movie.movie}

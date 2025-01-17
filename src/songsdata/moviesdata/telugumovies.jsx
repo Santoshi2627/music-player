@@ -41,7 +41,7 @@ export const TeluguMovies = [
         image:
           "https://i.scdn.co/image/ab67616d0000b273b3b86e8e5542f7b736a2cdfb",
         description: "A soulful melody with heartfelt lyrics.",
-        duration: "3:50",
+        // duration: "3:50",
       },
       {
         title: "Meenu Song",
@@ -53,7 +53,7 @@ export const TeluguMovies = [
         image:
           "https://i.scdn.co/image/ab67616d00001e0287d1153ce3b5c92dfe748d5f",
         description: "A soothing track with deep emotions.",
-        duration: "4:00",
+        // duration: "4:00",
       },
       {
         title: "BlockBuster Pongal",
@@ -64,7 +64,7 @@ export const TeluguMovies = [
         audio: pongal,
         image:
           "https://media.chitrajyothy.com/media/2024/20241209/Venkatesh_f816a59a05_V_jpg--799x414-4g.webp",description: "A soothing track with deep emotions.",
-        duration: "4:00",
+        // duration: "4:00",
       },
     ],
   },
@@ -79,7 +79,7 @@ export const TeluguMovies = [
     songs: [
       {
         title: "Chuttamalle",
-        artist: "Anirudh Ravichander, Shilpa Rao, Ramajogayya Sastry",
+        artist: "Shilpa Rao, Ramajogayya Sastry",
         movie: "Devara Part-1",
         language: "Telugu",
         year: 2024,
@@ -87,7 +87,7 @@ export const TeluguMovies = [
         image:
           "https://i.scdn.co/image/ab67616d0000b2736d97b3dc154dfdbe2321fb5c",
         description: "A calming song with a mix of old and new music styles.",
-        duration: "3:45",
+        // duration: "3:45",
       },
       {
         title: "Ayudha Pooja",
@@ -99,7 +99,7 @@ export const TeluguMovies = [
         image:
           "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da841761f97506b0cd40c5c6d457",
         description: "A powerful song with strong beats and inspiring vocals.",
-        duration: "4:10",
+        // duration: "4:10",
       },
       {
         title: "Fear Song",
@@ -111,7 +111,7 @@ export const TeluguMovies = [
         image:
           "https://i.scdn.co/image/ab67616d0000b2738591a24a47e09545b988f9b2",
         description: "A song with a mysterious vibe and intense music.",
-        duration: "3:55",
+        // duration: "3:55",
       },
       {
         title: "Thandavam",
@@ -123,7 +123,7 @@ export const TeluguMovies = [
         image:
           "https://i.scdn.co/image/ab67616d0000b2735280788ee7502153c9377477",
         description: "A powerful song with strong beats and moving vocals.",
-        duration: "4:00",
+        // duration: "4:00",
       },
       {
         title: "Daavudi",
@@ -135,7 +135,7 @@ export const TeluguMovies = [
         image:
           "https://i.scdn.co/image/ab67616d0000b273c55f82e66732fdf3f600dce7",
         description: "A soft song full of love and emotion.",
-        duration: "4:20",
+        // duration: "4:20",
       },
     ],
   },
@@ -159,7 +159,7 @@ export const TeluguMovies = [
         image:
           "https://i.scdn.co/image/ab67616d0000b273f9e02b6c00650fd4f43c1db5",
         description: "A powerful and intense track with strong beats",
-        duration: "3:25",
+        // duration: "3:25",
       },
       {
         title: "Sooseki",
@@ -171,7 +171,7 @@ export const TeluguMovies = [
         image:
           "https://i.scdn.co/image/ab67616d00001e02bde2708d57b1fbb64ca2a233",
         description: "A vibrant track with energetic beats.",
-        duration: "3:40",
+        // duration: "3:40",
       },
       {
         title: "Peelings Song",
@@ -183,7 +183,7 @@ export const TeluguMovies = [
         image:
           "https://i.scdn.co/image/ab67616d00001e029c3b8606a83a49694b48a126",
         description: "A quirky and upbeat track full of energy.",
-        duration: "3:45",
+        // duration: "3:45",
       },
       {
         title: "Pushpa Raj Anthem",
@@ -194,7 +194,7 @@ export const TeluguMovies = [
             audio: pushpa,
             image: "https://i.scdn.co/image/ab67616d00001e028cbf4925111458bccb1cd13d",
             description: "A song celebrating Pushpa Raj with energetic beats.",
-            duration: "3:35",
+            // duration: "3:35",
       },
       {
         title: "Dammuntey Pattukora",
@@ -206,7 +206,7 @@ export const TeluguMovies = [
         image:
           "https://i.scdn.co/image/ab67616d00001e02a99409c57c0ba55fdb2ae9ca",
         description: "A playful track with fun rhythms.",
-        duration: "4:00",
+        // duration: "4:00",
       },
     ],
   },
@@ -231,7 +231,7 @@ export const TeluguMovies = [
         image:
           "https://i.scdn.co/image/ab67616d0000b273e719267835e27042f386738a",
         description: "A sweet and romantic love song filled with charm.",
-        duration: "3:50",
+        // duration: "3:50",
       },
       {
         title: "Srimathigaru",
@@ -243,7 +243,7 @@ export const TeluguMovies = [
         image:
           "https://i.scdn.co/image/ab67616d0000b273e719267835e27042f386738a",
         description: "A sweet and romantic love song filled with charm.",
-        duration: "3:50",
+        // duration: "3:50",
       },
       {
         title: "Nijamakala",
@@ -255,7 +255,7 @@ export const TeluguMovies = [
         image:
           "https://i.scdn.co/image/ab67616d0000b273e6c98d0eba7163edc802bd27",
         description: "A heartfelt track about truth and emotions",
-        duration: "3:40",
+        // duration: "3:40",
       },
     ],
   },
@@ -279,7 +279,7 @@ export const TeluguMovies = [
         image:
           "https://i.scdn.co/image/ab67616d0000b2732005f3053bf6df284f413252",
         description: "A hauntingly beautiful track with deep emotions.",
-        duration: "5:10",
+        // duration: "5:10",
       },
       {
        title: "Fire",
@@ -290,7 +290,7 @@ export const TeluguMovies = [
            audio: fire,
            image: "https://i.scdn.co/image/ab67616d0000b273881d3f0bafa13d854ec3b051",
            description: "An energetic and powerful anthem that ignites passion",
-           duration: "3:45",
+          //  duration: "3:45",
       },
     ],
   },
@@ -314,7 +314,7 @@ export const TeluguMovies = [
         image:
           " https://i.scdn.co/image/ab67616d0000b273eea0c06f10fd411eaa6f9230",
         description: "A soothing melody that touches the heart.",
-        duration: "5:10",
+        // duration: "5:10",
       },
       {
         title: "Azadi",
@@ -325,7 +325,7 @@ export const TeluguMovies = [
         audio: azadi,
         image: "https://i.scdn.co/image/ab67616d00001e029dac7d936898ea10b372071b",
         description: "A soothing melody that touches the heart.",
-        duration: "4:30",
+        // duration: "4:30",
       },
       {
         title: "Veendiminnuneevanta",
@@ -337,7 +337,7 @@ export const TeluguMovies = [
         image:
           "https://i.scdn.co/image/ab67616d0000b27399e6c57f82333a0ca6a319d5",
         description: "A soothing melody that touches the heart.",
-        duration: "4:30",
+        // duration: "4:30",
       },
 
       {
@@ -349,7 +349,7 @@ export const TeluguMovies = [
         audio: userey,
         image: "https://i.scdn.co/image/ab67616d00001e02109eb387474d7a7b1780e7ef",
         description: "A soothing melody that touches the heart.",
-        duration: "4:30",
+        // duration: "4:30",
       },
     ],
   },

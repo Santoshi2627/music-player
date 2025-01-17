@@ -19,7 +19,7 @@ const HomepageSongs = () => {
   }, []);
 
   return (
-    <div className="p-5 mt-8" id="navitems">
+    <div className="p-5 mt-10" id="navitems">
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {randomSongs.map((song) => (
           <div

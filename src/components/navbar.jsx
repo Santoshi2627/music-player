@@ -1,15 +1,15 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLessThan,faGreaterThan } from "@fortawesome/free-solid-svg-icons";
+import {  faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 export const Navbar=()=>{
     const navigate=useNavigate()
     return(
         <>
-        <div className="w-full flex justify-between items-center font-semibold">
+        <div className="w-full flex justify-between items-center font-semibold text-white">
             <div className="flex items-center  gap-2 ">
-                <FontAwesomeIcon onClick={()=>{navigate(-1)}}icon={faLessThan} className="w-4 bg-black p-2 rounded-2xl  cursor-pointer"/>
-                <FontAwesomeIcon onClick={()=>{navigate(+1)}}icon={faGreaterThan} className="w-4 bg-black p-2 rounded-2xl cursor-pointer"/>
+                <FontAwesomeIcon onClick={()=>{navigate(-1)}}icon={faArrowLeft} className="w-5 bg-orange-500 p-2 rounded-2xl  cursor-pointer" />
+                <FontAwesomeIcon onClick={()=>{navigate(+1)}}icon={faArrowRight} className="w-5 bg-orange-500 p-2 rounded-2xl cursor-pointer"/>
             </div>
             <div className="flex items-center gap-4">
                 <p className="bg-orange-400 text-white text-[15px] px-4 py-1 rounded-2xl hidden md:block">Explore Premium</p>

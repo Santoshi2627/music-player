@@ -50,7 +50,7 @@ export const Telugu = [
   {
     id: 2,
     title: "Chuttamalle",
-    artist: "Anirudh Ravichander, Shilpa Rao, Ramajogayya Sastry",
+    artist: "Shilpa Rao, Ramajogayya Sastry",
     movie: "Devara Part-1",
     language: "Telugu",
     year: 2024,
