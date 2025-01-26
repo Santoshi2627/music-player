@@ -116,7 +116,7 @@ const SongDetails = () => {
             <p className="text-black text-sm">{song.singer || song.artist}</p>
             <p className="font-light text-xs">{song.description}</p>
             <button
-              className="mt-3 bg-orange-500 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded ml-5"
+              className="mt-3 bg-orange-500 hover:bg-orange-600 hover:shadow-xl text-white font-bold py-2 px-4 rounded ml-5 "
               onClick={(e) => {
                 e.stopPropagation(); // Prevent triggering the handleSongClick
                 handleAddPlaylist(song);

@@ -7,6 +7,7 @@ import App from "./myapp"
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom"
 import PlayerProvider from './context/playercontext';
+import User from './components/userdetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
     <BrowserRouter>
     <PlayerProvider>
     <App/>
+    <User/>
     </PlayerProvider>
     {/* <App /> */}
     {/* <App/> */}

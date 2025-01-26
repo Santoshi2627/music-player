@@ -1,5 +1,52 @@
-// import { createContext, useRef, useState,useContext } from "react";
-// import { Telugu } from "../songsdata/telugualbum";
+// // import { createContext, useRef, useState,useContext } from "react";
+// // import { Telugu } from "../songsdata/telugualbum";
+
+// // export const PlayerContext = createContext();
+
+// // const PlayerProvider = (props) => {
+// //   const [track, setTrack] = useState(Telugu[0]);
+// //   const audioRef = useRef(null);
+// //   const [playlist, setPlaylist] = useState([]);
+// //   const previous = () => {
+// //     if (track.id > 0) {
+// //       setTrack(Telugu[track.id - 1]);
+// //     }
+// //   };
+
+// //   const next = () => {
+// //     if (track.id < Telugu.length - 1) {
+// //       setTrack(Telugu[track.id + 1]);
+// //     }
+// //   };
+
+// //   const playWithId = (id) => {
+// //     setTrack(Telugu[id]); // Set the song with the given id without playing it
+// //   };
+
+// //  
+
+// //   const contextValue = {
+// //     track,
+// //     playWithId,
+// //     setTrack,
+// //     playCurrentTrack, // Add playCurrentTrack to context
+// //     previous,
+// //     next,
+// //     audioRef,
+// //     playlist, setPlaylist,addToPlaylist
+// //   };
+
+// //   return (
+// //     <PlayerContext.Provider value={contextValue}>
+// //       {props.children}
+// //     </PlayerContext.Provider>
+// //   );
+// // };
+
+// // // export default PlayerProvider;
+// // export const usePlaylist = () => useContext(PlayerProvider);
+// import { createContext, useContext, useState, useRef } from 'react';
+// import { Telugu } from '../songsdata/telugualbum';
 
 // export const PlayerContext = createContext();
 
@@ -7,33 +54,36 @@
 //   const [track, setTrack] = useState(Telugu[0]);
 //   const audioRef = useRef(null);
 //   const [playlist, setPlaylist] = useState([]);
-//   const previous = () => {
-//     if (track.id > 0) {
-//       setTrack(Telugu[track.id - 1]);
+
+//   const addToPlaylist = (song) => {
+//     if (!playlist.find((item) => item.id === song.id)) {
+//       setPlaylist((prevPlaylist) => [...prevPlaylist, song]);
 //     }
 //   };
-
-//   const next = () => {
-//     if (track.id < Telugu.length - 1) {
-//       setTrack(Telugu[track.id + 1]);
-//     }
-//   };
-
 //   const playWithId = (id) => {
-//     setTrack(Telugu[id]); // Set the song with the given id without playing it
-//   };
-
-//  
+//         setTrack(Telugu[id]); // Set the song with the given id without playing it
+//       };
+//       const previous = () => {
+//             if (track.id > 0) {
+//               setTrack(Telugu[track.id - 1]);
+//             }
+//           };
+        
+//           const next = () => {
+//             if (track.id < Telugu.length - 1) {
+//               setTrack(Telugu[track.id + 1]);
+//             }
+//           };
 
 //   const contextValue = {
 //     track,
-//     playWithId,
 //     setTrack,
-//     playCurrentTrack, // Add playCurrentTrack to context
-//     previous,
-//     next,
+//     playlist,
+//     setPlaylist,
+//     addToPlaylist,
 //     audioRef,
-//     playlist, setPlaylist,addToPlaylist
+//     playWithId,
+//     previous,next,
 //   };
 
 //   return (
@@ -43,8 +93,8 @@
 //   );
 // };
 
-// // export default PlayerProvider;
-// export const usePlaylist = () => useContext(PlayerProvider);
+// export const usePlaylist = () => useContext(PlayerContext); // Export hook
+// export default PlayerProvider;
 import { createContext, useContext, useState, useRef } from 'react';
 import { Telugu } from '../songsdata/telugualbum';
 
@@ -54,26 +104,29 @@ const PlayerProvider = (props) => {
   const [track, setTrack] = useState(Telugu[0]);
   const audioRef = useRef(null);
   const [playlist, setPlaylist] = useState([]);
+  const [user, setUser] = useState(null); // State to store user details
 
   const addToPlaylist = (song) => {
     if (!playlist.find((item) => item.id === song.id)) {
       setPlaylist((prevPlaylist) => [...prevPlaylist, song]);
     }
   };
+
   const playWithId = (id) => {
-        setTrack(Telugu[id]); // Set the song with the given id without playing it
-      };
-      const previous = () => {
-            if (track.id > 0) {
-              setTrack(Telugu[track.id - 1]);
-            }
-          };
-        
-          const next = () => {
-            if (track.id < Telugu.length - 1) {
-              setTrack(Telugu[track.id + 1]);
-            }
-          };
+    setTrack(Telugu[id]); // Set the song with the given id without playing it
+  };
+
+  const previous = () => {
+    if (track.id > 0) {
+      setTrack(Telugu[track.id - 1]);
+    }
+  };
+
+  const next = () => {
+    if (track.id < Telugu.length - 1) {
+      setTrack(Telugu[track.id + 1]);
+    }
+  };
 
   const contextValue = {
     track,
@@ -83,7 +136,10 @@ const PlayerProvider = (props) => {
     addToPlaylist,
     audioRef,
     playWithId,
-    previous,next,
+    previous,
+    next,
+    user, // Expose user data
+    setUser, // Expose function to set user data
   };
 
   return (
